@@ -77,7 +77,9 @@ Praticamente baseado na reatividade e na declaração e modificação da variáv
 - Variáveis: `variables`, `getPosts`
     - Variáveis de ambiente (env): `VITE_ENDPOINT_GRAPHQL`
 - Métodos: `homePage`, `previousPage`, `nextPage`
-    - Método reativo: `posts` (vinculado à `variables`)
+    - Método reativo: `posts` (vinculado à `variables`).
+- Verificações:
+    - Para exibição dos botões de paginação: `hasPreviousPage` (exibe botões *página anterior* e *início*), `hasNextPage` (exibe o botão de *próxima página*).
 
 ### Variáveis
 
@@ -105,9 +107,6 @@ Praticamente baseado na reatividade e na declaração e modificação da variáv
 ```javascript
 $: getPosts = posts(variables);
 ```
-
----
----
 
 ### Métodos
 
